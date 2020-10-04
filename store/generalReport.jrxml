@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="generalReport" language="groovy" pageWidth="612" pageHeight="792" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="date_title" class="java.lang.String"/>
+	<parameter name="A" class="java.lang.String"/>
+	<parameter name="B" class="java.lang.String"/>
+	<parameter name="C" class="java.lang.String"/>
+	<parameter name="D" class="java.lang.String"/>
+	<parameter name="E" class="java.lang.String"/>
+	<parameter name="F" class="java.lang.String"/>
+	<parameter name="G" class="java.lang.String"/>
+	<parameter name="H" class="java.lang.String"/>
+	<parameter name="I" class="java.lang.String"/>
+	<parameter name="J" class="java.lang.String"/>
+	<parameter name="K" class="java.lang.String"/>
+	<parameter name="L" class="java.lang.String"/>
+	<parameter name="M" class="java.lang.String"/>
+	<parameter name="N" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="A" class="java.lang.Object"/>
+	<field name="B" class="java.lang.Object"/>
+	<field name="C" class="java.lang.Object"/>
+	<field name="D" class="java.lang.Object"/>
+	<field name="E" class="java.lang.Object"/>
+	<field name="F" class="java.lang.Object"/>
+	<field name="G" class="java.lang.Object"/>
+	<field name="H" class="java.lang.Object"/>
+	<field name="I" class="java.lang.Object"/>
+	<field name="J" class="java.lang.Object"/>
+	<field name="K" class="java.lang.Object"/>
+	<field name="L" class="java.lang.Object"/>
+	<field name="M" class="java.lang.Object"/>
+	<field name="N" class="java.lang.Object"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="20" width="572" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Segoe UI Semibold" size="15"/>
+				</textElement>
+				<text><![CDATA[General Report]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="0" width="572" height="20"/>
+				<textElement textAlignment="Center" lineSpacing="Single">
+					<font fontName="Segoe UI Semibold" size="12"/>
+				</textElement>
+				<text><![CDATA[Mini-Lending]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="0" y="40" width="572" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Segoe UI Semibold" size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{date_title}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="3" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="7" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="412" splitType="Stretch">
+			<staticText>
+				<reportElement x="38" y="0" width="129" height="20"/>
+				<textElement verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Segoe UI" size="12" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[CASH LOANED]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="67" y="20" width="100" height="20"/>
+				<textElement verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Segoe UI" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Borrower Loan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="67" y="40" width="100" height="20"/>
+				<textElement verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Segoe UI" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Cash Advance]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="38" y="90" width="129" height="20"/>
+				<textElement verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Segoe UI" size="12" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[INTEREST INCOME]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="67" y="110" width="100" height="20"/>
+				<textElement verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Segoe UI" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Borrower Loan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="67" y="130" width="100" height="20"/>
+				<textElement verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Segoe UI" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Cash Advance]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="38" y="60" width="129" height="20"/>
+				<textElement verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Segoe UI" size="12" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Total Cash Loaned]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="38" y="150" width="129" height="20"/>
+				<textElement verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Segoe UI" size="12" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Total Interest Income]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="67" y="221" width="100" height="20"/>
+				<textElement verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Segoe UI" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Borrower Loan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="38" y="201" width="88" height="20"/>
+				<textElement verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Segoe UI" size="12" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[UNPAID LOAN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="67" y="241" width="100" height="20"/>
+				<textElement verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Segoe UI" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Cash Advance]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="38" y="261" width="129" height="20"/>
+				<textElement verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Segoe UI" size="12" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Total Unpaid Loan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="126" y="201" width="90" height="20"/>
+				<textElement verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Segoe UI" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[(including interest)]]></text>
+			</staticText>
+			<line>
+				<reportElement x="38" y="285" width="487" height="1"/>
+			</line>
+			<textField pattern="">
+				<reportElement x="292" y="20" width="100" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Segoe UI" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[new java.text.DecimalFormat("#,##0.00").format(Double.valueOf($P{A}))]]></textFieldExpression>
+			</textField>
+			<textField pattern="">
+				<reportElement x="292" y="40" width="100" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Segoe UI" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[new java.text.DecimalFormat("#,##0.00").format(Double.valueOf($P{B}))]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="278" y="20" width="14" height="20"/>
+				<textElement verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Segoe UI" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[₱]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="278" y="40" width="14" height="20"/>
+				<textElement verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Segoe UI" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[₱]]></text>
+			</staticText>
+			<line>
+				<reportElement x="254" y="60" width="271" height="1"/>
+			</line>
+			<staticText>
+				<reportElement x="392" y="61" width="14" height="20"/>
+				<textElement verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Segoe UI" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[₱]]></text>
+			</staticText>
+			<textField pattern="">
+				<reportElement x="406" y="61" width="100" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Segoe UI" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[new java.text.DecimalFormat("#,##0.00").format(Double.valueOf($P{C}))]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="278" y="130" width="14" height="20"/>
+				<textElement verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Segoe UI" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[₱]]></text>
+			</staticText>
+			<textField pattern="">
+				<reportElement x="406" y="151" width="100" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Segoe UI" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[new java.text.DecimalFormat("#,##0.00").format(Double.valueOf($P{F}))]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="254" y="150" width="271" height="1"/>
+			</line>
+			<textField pattern="">
+				<reportElement x="292" y="110" width="100" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Segoe UI" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[new java.text.DecimalFormat("#,##0.00").format(Double.valueOf($P{D}))]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="392" y="151" width="14" height="20"/>
+				<textElement verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Segoe UI" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[₱]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="278" y="110" width="14" height="20"/>
+				<textElement verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Segoe UI" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[₱]]></text>
+			</staticText>
+			<textField pattern="">
+				<reportElement x="292" y="130" width="100" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Segoe UI" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[new java.text.DecimalFormat("#,##0.00").format(Double.valueOf($P{E}))]]></textFieldExpression>
+			</textField>
+			<textField pattern="">
+				<reportElement x="292" y="220" width="100" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Segoe UI" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[new java.text.DecimalFormat("#,##0.00").format(Double.valueOf($P{H}))]]></textFieldExpression>
+			</textField>
+			<textField pattern="">
+				<reportElement x="292" y="240" width="100" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Segoe UI" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[new java.text.DecimalFormat("#,##0.00").format(Double.valueOf($P{I}))]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="278" y="220" width="14" height="20"/>
+				<textElement verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Segoe UI" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[₱]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="392" y="261" width="14" height="20"/>
+				<textElement verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Segoe UI" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[₱]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="278" y="240" width="14" height="20"/>
+				<textElement verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Segoe UI" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[₱]]></text>
+			</staticText>
+			<textField pattern="">
+				<reportElement x="406" y="261" width="100" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Segoe UI" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[new java.text.DecimalFormat("#,##0.00").format(Double.valueOf($P{J}))]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="254" y="260" width="271" height="1"/>
+			</line>
+			<staticText>
+				<reportElement x="38" y="289" width="129" height="20"/>
+				<textElement verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Segoe UI" size="12" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[OVERALL TOTAL]]></text>
+			</staticText>
+			<textField pattern="">
+				<reportElement x="406" y="289" width="100" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Segoe UI" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[new java.text.DecimalFormat("#,##0.00").format(Double.valueOf($P{K}))]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="392" y="289" width="14" height="20"/>
+				<textElement verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Segoe UI" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[₱]]></text>
+			</staticText>
+			<line>
+				<reportElement x="392" y="309" width="114" height="1"/>
+			</line>
+			<line>
+				<reportElement x="392" y="315" width="114" height="1"/>
+			</line>
+			<line>
+				<reportElement x="0" y="327" width="572" height="1"/>
+			</line>
+			<staticText>
+				<reportElement x="38" y="338" width="206" height="20"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Segoe UI" size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Number of Cancelled Loans:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="38" y="358" width="206" height="20"/>
+				<box>
+					<leftPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Segoe UI" size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Number of Cancelled Cash Advance:]]></text>
+			</staticText>
+			<textField pattern="">
+				<reportElement x="244" y="338" width="100" height="20"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Segoe UI" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{L}]]></textFieldExpression>
+			</textField>
+			<textField pattern="">
+				<reportElement x="244" y="358" width="100" height="20"/>
+				<box>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Segoe UI" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{M}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="126" y="0" width="128" height="20"/>
+				<textElement verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Segoe UI" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[(paid loan only)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="149" y="90" width="105" height="20"/>
+				<textElement verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Segoe UI" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[(paid loan only)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="38" y="173" width="129" height="20"/>
+				<textElement verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Segoe UI" size="12" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[TOTAL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="392" y="173" width="14" height="20"/>
+				<textElement verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Segoe UI" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[₱]]></text>
+			</staticText>
+			<textField pattern="">
+				<reportElement x="406" y="173" width="100" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Segoe UI" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[new java.text.DecimalFormat("#,##0.00").format(Double.valueOf($P{G}))]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="79" y="173" width="175" height="20"/>
+				<textElement verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Segoe UI" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[(cash loaned + interest income)]]></text>
+			</staticText>
+			<line>
+				<reportElement x="38" y="171" width="487" height="1"/>
+			</line>
+			<textField pattern="">
+				<reportElement x="244" y="378" width="100" height="20"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Segoe UI" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{N}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="38" y="378" width="206" height="20"/>
+				<box>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Segoe UI" size="12" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Total Cancelled Transaction:]]></text>
+			</staticText>
+			<line>
+				<reportElement x="38" y="378" width="306" height="1"/>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
